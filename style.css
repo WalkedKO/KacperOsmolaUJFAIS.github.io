@@ -1,0 +1,39 @@
+html, body
+{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#menu
+{
+    height: 14%;
+    width: 100%;
+    background-color: darkgrey;
+}
+#header
+{
+    height: 100%;
+    width: 39%;
+    background-color: gray;
+}
+#content
+{
+    height: 76%;
+    width: 67%;
+    float: left;
+}
+#sidebar
+{
+    height: 76%;
+    width: 23%;
+    background-color: darkcyan;
+    float: right;
+}
+#footer
+{
+    height: 10%;
+    width: 100%;
+    background-color: gray;
+    clear: both;
+}
