@@ -7,32 +7,55 @@ html, body
 }
 #menu
 {
-    height: 14%;
+    height: 12.5%;
     width: 100%;
-    background-color: darkgrey;
+    background-color: darkkhaki;
+
+
+    position:fixed;
+    top:0;
+    left:0;
 }
 #header
 {
     height: 100%;
     width: 39%;
+    align-items: center;
+    text-align: center;
+    font-family: 'Comic Sans MS';
     background-color: gray;
+    float:left;
+    
+    display:flex;
+}
+#header>h1
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+#buttons
+{
+    float: right;
+    width: 61%;
 }
 #content
 {
-    height: 76%;
-    width: 67%;
-    float: left;
+    height: 100%;
+    width: auto;
+    float: right;
 }
 #sidebar
 {
-    height: 76%;
+    height: 100%;
     width: 23%;
-    background-color: darkcyan;
-    float: right;
+    float: left;
+
+    border-right-style: solid;
+    border-right-width: 3px;
 }
 #footer
 {
-    height: 10%;
+    height: calc(5/34 * 100%);
     width: 100%;
     background-color: gray;
     clear: both;
