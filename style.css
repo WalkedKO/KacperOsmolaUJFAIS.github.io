@@ -4,59 +4,177 @@ html, body
     width: 100%;
     padding: 0;
     margin: 0;
+    color: #353535;
+    background-color: #ffffff;
 }
-#menu
+.menu
 {
     height: 12.5%;
     width: 100%;
-    background-color: darkkhaki;
+    background-color: #d9d9d9;
 
 
     position:fixed;
     top:0;
     left:0;
 }
-#header
+.header
 {
     height: 100%;
     width: 39%;
     align-items: center;
-    text-align: center;
-    font-family: 'Comic Sans MS';
-    background-color: gray;
-    float:left;
-    
     display:flex;
+    text-align: center;
+
+    font-family: 'Comic Sans MS';
+    background-color: #284b63;
+    color: #ffffff;
+    float:left;
 }
-#header>h1
+.header>h1
 {
     margin-left: auto;
     margin-right: auto;
 }
-#buttons
+.content
 {
+    height: 87.5%;
+    width: 77%;
     float: right;
-    width: 61%;
+    margin-top: 12.5%;
+    padding-left:40px;
 }
-#content
+.buttons
 {
-    height: 100%;
-    width: auto;
-    float: right;
+    margin-top: 120px;
 }
-#sidebar
+.subsite
+{
+    background-color: #284b63;
+    color: #ffffff;
+    margin-bottom: 20px;
+    height: 50px;
+}
+.sidebar
 {
     height: 100%;
     width: 23%;
     float: left;
-
+    border-color:#284b63;
     border-right-style: solid;
     border-right-width: 3px;
 }
-#footer
+.footer
 {
     height: calc(5/34 * 100%);
     width: 100%;
-    background-color: gray;
+    background-color: #284b63;
+    text-align: center;
+    
+    color: #ffffff;
+	bottom:0;
+	position:fixed;
     clear: both;
+}
+.footer p{
+    align-items: center;
+    display:flex;
+    margin-left:auto;
+    margin-right: auto;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+.subsite:hover
+    {
+        background-color: #3c6e71;    
+    }
+.content>article
+    {
+        padding:10px;
+    }
+#table
+{
+    width:500px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px;
+}
+#table> table {
+    margin:auto;
+}
+#table > table, #table  th, #table  td
+{
+    border-collapse: collapse;
+    border: #284b63 2px solid;
+} 
+
+.articlesub
+{
+    width:60%;
+    float:left;
+}
+img
+{
+	width:250px;
+}
+@media only screen and (max-width: 600px)
+{
+    .menu
+    {
+        height: 12.5%;
+        width: 100%;
+        position:absolute;
+    }
+    .header
+    {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-family: 'Comic Sans MS';
+        background-color: gray;
+    }
+    .header>h1
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content
+    {
+        height: 100%;
+        margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+        width: 100%;
+        text-align:center;
+		padding-left:0px;
+    }
+    .sidebar
+    {
+        height: auto;
+        width: 100%;
+
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+    }
+    .buttons
+    {
+        margin-top: 100px;
+    }
+    .subsite
+    {
+        border-style: solid;
+        margin-bottom: 1px;
+        height: 30px;
+    }
+	.maintext
+	{
+		width: 100%;
+		text-align:center;
+	}
 }
